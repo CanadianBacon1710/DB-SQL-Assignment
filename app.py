@@ -2,6 +2,8 @@ import database
 
 MENU_PROMPT = '''\033[1;31;40m -- Bands App --
 
+#Hello
+
 Please choose one of these options:
 
 1) Add a new band
