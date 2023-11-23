@@ -24,8 +24,13 @@ def menu():
             name = input("Enter band name: ")
             album = input("Enter their latest album: ")
             rating = int(input('Enter your rating score of this album (0-100): '))
-
-            database.addBand(connection, name, album, rating)
+            
+            if name != 'Weezer':
+                database.addBand(connection, name, album, rating)
+            else: 
+                print('!| Weezer Detected. Connection terminated. |!
+                exit()
+                      
         elif user_input == '2':
             bands = database.getAllBands(connection)
 
